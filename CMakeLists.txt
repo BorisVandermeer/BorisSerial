@@ -51,7 +51,7 @@ elseif(UNIX)
 else()
     target_link_libraries(BORIS_SERIAL_LIB setupapi)
 endif()
-target_include_directories(BORIS_SERIAL_LIB PUBLIC ${BORIS_SERIAL_INCLUDE_DIRS})
+target_include_directories(BORIS_SERIAL_LIB PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 SET(BORIS_SERIAL_LIBRARIES BORIS_SERIAL_LIB)
 SET(BORIS_SERIAL_INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/include)
